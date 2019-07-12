@@ -1,0 +1,16 @@
+.popular {
+  width: 1400px;
+  margin: auto;
+
+  &__bg-warpper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .popular {
+    width: 95%;
+  }
+}
