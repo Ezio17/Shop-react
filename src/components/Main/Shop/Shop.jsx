@@ -1,6 +1,6 @@
 import React from 'react';
 import ShopTemplate from '../../common/ShopTemplate/ShopTemplate';
-import { allItem } from '../../../data/data';
+import { allItem } from '../../../data-image/data';
 
 const Shop = () => <ShopTemplate title="Shop" items={allItem} />;
 

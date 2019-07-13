@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './../../../common/Title';
-import { popularItems } from './../../../../data/data';
+import { popularItems } from '../../../../data-image/data';
 import { Spring } from 'react-spring/renderprops';
 import ItemCard from './../../../common/ItemCard';
 

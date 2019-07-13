@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { headerNav, category } from '../../../data/data';
+import { headerNav, category } from '../../../data-image/data';
 import { Link } from 'react-scroll';
 import Logo from './Logo';
 
