@@ -1,0 +1,10 @@
+.shop {
+  width: 1400px;
+  margin: auto;
+}
+
+@media all and (max-width: 1400px) { 
+  .shop {
+    width: 95%;
+  }
+}

@@ -1,0 +1,23 @@
+.search-items {
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__title {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  &__input {
+    width: 150px;
+    height: 20px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .search-items {
+    width: 95%;
+  }
+}
