@@ -1,21 +1,21 @@
-import powerBank from './powerbank.jpg';
-import ps_four from './ps4.jpg';
-import iphone_seven_plus from './iphone7+.jpg';
-import dx_racer from './dxRacer.jpg';
-import apple_ipad from './Apple iPad.jpg';
-import mac_book from './macBook.jpg';
-import fridge from './fridge.jpg';
-import washer from './washer.jpg';
-import dishwasher from './dishwasher.jpg';
-import teapot from './teapot.jpg';
-import blender from './blender.jpg';
-import computer_desk from './computerDesk.jpg';
-import sofa from './sofa.jpg';
-import bed from './bed.jpg';
-import closet from './closet.jpg';
-import household_appliances from './household-appliances.jpg';
-import furniture from './furniture.jpg';
-import electronics from './electronics.jpg';
+import powerBank from '../img/powerbank.jpg';
+import ps_four from '../img/ps4.jpg';
+import iphone_seven_plus from '../img/iphone7+.jpg';
+import dx_racer from '../img/dxRacer.jpg';
+import apple_ipad from '../img/Apple iPad.jpg';
+import mac_book from '../img/macBook.jpg';
+import fridge from '../img/fridge.jpg';
+import washer from '../img/washer.jpg';
+import dishwasher from '../img/dishwasher.jpg';
+import teapot from '../img/teapot.jpg';
+import blender from '../img/blender.jpg';
+import computer_desk from '../img/computerDesk.jpg';
+import sofa from '../img/sofa.jpg';
+import bed from '../img/bed.jpg';
+import closet from '../img/closet.jpg';
+import household_appliances from '../img/household-appliances.jpg';
+import furniture from '../img/furniture.jpg';
+import electronics from '../img/electronics.jpg';
 
 export const electronicsItems = [
   {

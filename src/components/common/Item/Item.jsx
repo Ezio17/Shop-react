@@ -2,7 +2,7 @@ import React from 'react';
 import ItemImage from './itemComponents/ItemImage';
 import InfoAboutItem from './itemComponents/InfoAboutItem';
 import SimilarItem from './itemComponents/SimilarItem';
-import { allItem } from '../../../data-image/data';
+import { allItem } from '../../../data/data';
 
 class Item extends React.Component {
   constructor(props) {

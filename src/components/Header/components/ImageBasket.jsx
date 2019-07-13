@@ -1,5 +1,5 @@
 import React from 'react';
-import basket from './basket.png';
+import basket from '../../../img/basket.png';
 import BackgroundImage from 'react-background-image';
 import { BasketItems } from '../../../App';
 import { Link } from 'react-router-dom';

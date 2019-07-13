@@ -3,7 +3,7 @@ import BackgroundImage from 'react-background-image';
 import Title from './../../../common/Title';
 import { Spring } from 'react-spring/renderprops';
 import { Link } from 'react-router-dom';
-import { category } from '../../../../data-image/data';
+import { category } from '../../../../data/data';
 
 const Category = () => {
   return (

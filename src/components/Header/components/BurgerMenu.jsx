@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from 'react-burger-menu/lib/menus/bubble';
 import { NavLink } from 'react-router-dom';
-import { navsBurgerMenu } from '../../../data-image/data';
+import { navsBurgerMenu } from '../../../data/data';
 import { Link } from 'react-scroll';
 import Logo from './Logo';
 
