@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Spring } from 'react-spring/renderprops';
 import { Link } from 'react-router-dom';
-import { dataSlider } from '../../../../data-image/data';
+import { dataSlider } from '../../../../data/data';
 
 class BoardSlider extends React.Component {
   render() {

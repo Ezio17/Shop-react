@@ -7,7 +7,7 @@ const SearchItems = props => {
       <input
         type="text"
         className="search-items__input"
-        placeholder="search"
+        placeholder="пошук"
         value={props.value}
         onChange={props.handleChange}
       />
