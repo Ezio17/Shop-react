@@ -28,6 +28,7 @@ class App extends React.Component {
     this.addItemToBasket = this.addItemToBasket.bind(this);
     this.emptyBasket = this.emptyBasket.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
+    this.clearBasket = this.clearBasket.bind(this);
   }
 
   emptyBasket() {
@@ -40,10 +41,6 @@ class App extends React.Component {
   }
 
   addItemToBasket(item, count) {
-    item.count = count;
-    let finalPrice = count * parseFloat(item.price.replace(/\s+/g, ''));
-    item.finalPrice = Math.round(finalPrice);
-
     let repeatingItem = this.state.basket.filter(
       basket => basket.id === item.id && basket.to === item.to
     );
@@ -57,6 +54,9 @@ class App extends React.Component {
       });
       return;
     } else {
+      item.count = count;
+      let finalPrice = count * parseFloat(item.price.replace(/\s+/g, ''));
+      item.finalPrice = Math.round(finalPrice);
       this.setState({
         basket: [...this.state.basket, item],
         finalPriceAllItems: this.state.finalPriceAllItems + Math.round(finalPrice),
@@ -81,6 +81,13 @@ class App extends React.Component {
     });
   }
 
+  clearBasket() {
+    this.setState({
+      basket: [],
+      finalPriceAllItems: 0,
+    });
+  }
+
   render() {
     this.basket = {
       basket: this.state.basket,
@@ -88,6 +95,7 @@ class App extends React.Component {
       emptyBasket: this.emptyBasket,
       deleteItem: this.deleteItem,
       finalPriceAllItems: this.state.finalPriceAllItems,
+      clearBasket: this.clearBasket,
     };
 
     return (

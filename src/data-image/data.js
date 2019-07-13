@@ -55,7 +55,7 @@ export const electronicsItems = [
     info: 'info about item',
   },
   {
-    name: 'mac_book',
+    name: 'macBook',
     category: 'Електроніка',
     price: '31 400.00 грн',
     img: mac_book,
@@ -211,7 +211,7 @@ export const dataSlider = [
     info: 'info about item',
   },
   {
-    name: 'mac_book',
+    name: 'macBook',
     category: 'Електроніка',
     price: '31 400.00 грн',
     img: mac_book,

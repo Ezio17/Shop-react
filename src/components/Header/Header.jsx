@@ -14,11 +14,16 @@ class Header extends React.Component {
 
     this.mouseOut = this.mouseOut.bind(this);
     this.mouseOver = this.mouseOver.bind(this);
+    this.resize = this.resize.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.resize.bind(this));
+    window.addEventListener('resize', this.resize);
     this.resize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize);
   }
 
   mouseOver() {
