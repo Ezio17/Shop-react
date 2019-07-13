@@ -91,7 +91,7 @@ class App extends React.Component {
     };
 
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <BasketItems.Provider value={this.basket}>
           <div className="page">
             <Header />
