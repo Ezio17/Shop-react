@@ -1,19 +1,19 @@
 import powerBank from './powerbank.jpg';
-import ps4 from './ps4.jpg';
-import iPhone7 from './iphone7+.jpg';
-import dxRacer from './dxRacer.jpg';
-import AppleiPad from './Apple iPad.jpg';
-import MacBook from './macBook.jpg';
+import ps_four from './ps4.jpg';
+import iphone_seven_plus from './iphone7+.jpg';
+import dx_racer from './dxRacer.jpg';
+import apple_ipad from './Apple iPad.jpg';
+import mac_book from './macBook.jpg';
 import fridge from './fridge.jpg';
 import washer from './washer.jpg';
 import dishwasher from './dishwasher.jpg';
 import teapot from './teapot.jpg';
 import blender from './blender.jpg';
-import computerDesk from './computerDesk.jpg';
+import computer_desk from './computerDesk.jpg';
 import sofa from './sofa.jpg';
 import bed from './bed.jpg';
 import closet from './closet.jpg';
-import householdAppliances from './household-appliances.jpg';
+import household_appliances from './household-appliances.jpg';
 import furniture from './furniture.jpg';
 import electronics from './electronics.jpg';
 
@@ -22,7 +22,7 @@ export const electronicsItems = [
     name: 'iPhone 7+',
     category: 'Електроніка',
     price: '20 940.30 грн',
-    img: iPhone7,
+    img: iphone_seven_plus,
     to: 'electronics',
     id: 1,
     info: 'info about item',
@@ -40,7 +40,7 @@ export const electronicsItems = [
     name: 'ps4',
     category: 'Електроніка',
     price: '10 500.00 грн',
-    img: ps4,
+    img: ps_four,
     to: 'electronics',
     id: 3,
     info: 'info about item',
@@ -49,16 +49,16 @@ export const electronicsItems = [
     name: 'Apple iPad 2018 Wi-Fi + LTE 128GB Silver',
     category: 'Електроніка',
     price: '16 100.00 грн',
-    img: AppleiPad,
+    img: apple_ipad,
     to: 'electronics',
     id: 4,
     info: 'info about item',
   },
   {
-    name: 'MacBook',
+    name: 'mac_book',
     category: 'Електроніка',
     price: '31 400.00 грн',
-    img: MacBook,
+    img: mac_book,
     to: 'electronics',
     id: 5,
     info: 'info about item',
@@ -115,10 +115,10 @@ export const householdAppliancesItems = [
 
 export const furnitureItems = [
   {
-    name: 'dxRacer',
+    name: 'dx_racer',
     category: 'Меблі',
     price: '9 950.00 грн',
-    img: dxRacer,
+    img: dx_racer,
     to: 'furniture',
     id: 1,
     info: 'info about item',
@@ -127,7 +127,7 @@ export const furnitureItems = [
     name: "Комп'ютерний стіл",
     category: 'Меблі',
     price: '2 237.00 грн.',
-    img: computerDesk,
+    img: computer_desk,
     to: 'furniture',
     id: 2,
     info: 'info about item',
@@ -182,7 +182,7 @@ export const headerNav = [
 export const category = [
   {
     name: 'Побутова техніка',
-    img: householdAppliances,
+    img: household_appliances,
     to: '/shop/household-appliances',
     categoryClass: true,
   },
@@ -205,25 +205,25 @@ export const dataSlider = [
     name: 'iPhone 7+',
     category: 'Електроніка',
     price: '20 940.30 грн',
-    img: iPhone7,
+    img: iphone_seven_plus,
     to: 'electronics',
     id: 1,
     info: 'info about item',
   },
   {
-    name: 'MacBook',
+    name: 'mac_book',
     category: 'Електроніка',
     price: '31 400.00 грн',
-    img: MacBook,
+    img: mac_book,
     to: 'electronics',
     id: 5,
     info: 'info about item',
   },
   {
-    name: 'dxRacer',
+    name: 'dx_racer',
     category: 'Меблі',
     price: '9 950.00 грн',
-    img: dxRacer,
+    img: dx_racer,
     to: 'furniture',
     id: 1,
     info: 'info about item',
@@ -241,7 +241,7 @@ export const dataSlider = [
     name: 'ps4',
     category: 'Електроніка',
     price: '10 500.00 грн',
-    img: ps4,
+    img: ps_four,
     to: 'electronics',
     id: 3,
     info: 'info about item',
@@ -253,16 +253,16 @@ export const popularItems = [
     name: 'iPhone 7+',
     category: 'Електроніка',
     price: '20 940.30 грн',
-    img: iPhone7,
+    img: iphone_seven_plus,
     to: 'electronics',
     id: 1,
     info: 'info about item',
   },
   {
-    name: 'dxRacer',
+    name: 'dx_racer',
     category: 'Меблі',
     price: '9 950.00 грн',
-    img: dxRacer,
+    img: dx_racer,
     to: 'furniture',
     id: 1,
     info: 'info about item',
@@ -280,7 +280,7 @@ export const popularItems = [
     name: 'ps4',
     category: 'Електроніка',
     price: '10 500.00 грн',
-    img: ps4,
+    img: ps_four,
     to: 'electronics',
     id: 3,
     info: 'info about item',
