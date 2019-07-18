@@ -29,6 +29,7 @@ class App extends React.Component {
     this.emptyBasket = this.emptyBasket.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.clearBasket = this.clearBasket.bind(this);
+    this.onChangeBasketCount = this.onChangeBasketCount.bind(this);
   }
 
   emptyBasket() {
@@ -88,6 +89,31 @@ class App extends React.Component {
     });
   }
 
+  onChangeBasketCount(basket, event) {
+    const { basket: basketItems, finalPriceAllItems } = this.state;
+    for (let i = 0; i < basketItems.length; i++) {
+      if (basketItems[i].id === basket.id) {
+        basketItems[i].count = event.target.value;
+
+        let changeFinalPriceAllItems = finalPriceAllItems - basketItems[i].finalPrice;
+        let finalPrice =
+          basketItems[i].count * parseFloat(basketItems[i].price.replace(/\s+/g, ''));
+
+        if (basketItems[i].count >= 0) {
+          basketItems[i].finalPrice = Math.round(finalPrice);
+        } else {
+          basketItems[i].finalPrice = 0;
+        }
+        changeFinalPriceAllItems += basketItems[i].finalPrice;
+
+        this.setState({
+          basket: basketItems,
+          finalPriceAllItems: changeFinalPriceAllItems,
+        });
+      }
+    }
+  }
+
   render() {
     this.basket = {
       basket: this.state.basket,
@@ -96,6 +122,7 @@ class App extends React.Component {
       deleteItem: this.deleteItem,
       finalPriceAllItems: this.state.finalPriceAllItems,
       clearBasket: this.clearBasket,
+      onChangeBasketCount: this.onChangeBasketCount,
     };
 
     return (
