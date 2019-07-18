@@ -37,7 +37,15 @@ const Table = props => (
                 </tr>
                 <tr>
                   <th>Кількість</th>
-                  <td className="basket__table-count">{basket.count}</td>
+                  <td className="basket__table-count">
+                    <input
+                      className="basket__input-count"
+                      type="number"
+                      value={basket.count}
+                      min="1"
+                      onChange={event => value.onChangeBasketCount(basket, event)}
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <th>Ціна</th>
@@ -78,7 +86,15 @@ const Table = props => (
                   <td className="basket__table-name">
                     <Link to={`/shop/${basket.to}/${basket.id}`}>{basket.name}</Link>
                   </td>
-                  <td className="basket__table-count">{basket.count}</td>
+                  <td className="basket__table-count">
+                    <input
+                      className="basket__input-count"
+                      type="number"
+                      value={basket.count}
+                      min="1"
+                      onChange={event => value.onChangeBasketCount(basket, event)}
+                    />
+                  </td>
                   <td className="basket__table-price">{basket.finalPrice} грн</td>
                   <td>
                     <p className="basket__table-delete" onClick={() => value.deleteItem(basket)}>
